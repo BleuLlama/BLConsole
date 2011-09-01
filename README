@@ -1,0 +1,26 @@
+
+BLConsole
+
+BLConsole is a class to be instantiated by your iOS project, which
+starts up a small telnet server, as well as Bonjour services so
+that it is discoverable on the local network.
+
+The basic concept is that rather than your game pulling up a console
+on the iDevice's screen, and having to deal with the on screen
+keyboard, or building a user interface for debugging or user
+customizations, you instead will connect from another device,
+presumably with a better keyboard and display for this kind of
+thing.
+
+There is an example application that includes the class, and shows
+basic use for it.
+
+It will start up a listner on port 24242, incrementing it in case
+that port is already occupied for whatever reason.
+
+When you telnet to your device on this port, you will be greeted 
+by a console prompt 
+
+>: 
+
+From there, if you type 'help' it will list the available commands.
