@@ -31,6 +31,10 @@
 
 #import <Foundation/Foundation.h>
 
+// NOTE: current implementation blocks on the main runloop. This is bad.
+//       Need to upgrade this to use NSStream.
+//       eg: http://stackoverflow.com/questions/4930957/nsstream-and-sockets-nsstreamdelegate-methods-not-being-called
+
 ////////////////////////////////////////
 // Delegate protocols
 
